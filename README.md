@@ -37,15 +37,11 @@ UMeeChat is a real-time chat application with a Java EE backend that handles use
    ```
 
 2. **Navigate to the project directory:**
-   ```bash
-   cd umeechat-backend
-   ```
+  
 
 3. **Set up the MySQL database:**
-   - Create a new database for the application:
-     ```sql
-     CREATE DATABASE umeechat_db;
-     ```
+   - Location file /src/java/Database
+   
    - Update the database configuration in the `hibernate.cfg.xml` file located in the `src/main/resources` folder:
      ```xml
      <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/umeechat_db</property>
@@ -53,15 +49,7 @@ UMeeChat is a real-time chat application with a Java EE backend that handles use
      <property name="hibernate.connection.password">your_db_password</property>
      ```
 
-4. **Build the project using Maven:**
-   ```bash
-   mvn clean install
-   ```
-
-5. **Deploy the generated WAR file to your Java EE server (TomEE/GlassFish):**
-   - Copy the WAR file from the `target` directory to your server’s deployment folder.
-
-6. **Run the MySQL database migration scripts** (if required).
+7. **Run the Project Java EE7 Required GlassFish Server 5 and Java SDK 1.8.
 
 ### Project Structure
 
@@ -153,11 +141,5 @@ UMeeChat is a real-time chat application with a Java EE backend that handles use
 
 ### Deployment
 
-1. **Build the Project**: Use Maven to build the project and generate the WAR file.
-   ```bash
-   mvn clean install
-   ```
-
-2. **Deploy the WAR File**: Deploy the WAR file to your Java EE server (TomEE, GlassFish, etc.).
-   
-3. **Access the Backend**: Ensure that the backend APIs are accessible via the configured domain (e.g., `http://localhost:8080/UMee_Chat_App`).
+1. **Deploy the Project**:    
+2. **Access the Backend**: Ensure that the backend APIs are accessible via the configured domain (e.g., `http://localhost:8080/UMee_Chat_App`).
