@@ -26,7 +26,7 @@ public class Test extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         
         try {
-            
+            //new var
             Session session = HibernateUtil.getSessionFactory().openSession();
             
             Chat_Status chat_Status = new Chat_Status();
