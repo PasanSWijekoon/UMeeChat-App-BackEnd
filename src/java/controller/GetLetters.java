@@ -43,7 +43,7 @@ public class GetLetters extends HttpServlet {
             responseJson.addProperty("letters", letters);
         } else {
             // User not found
-            responseJson.addProperty("letters", "User Not Found");
+           // responseJson.addProperty("letters", "User Not Found");
         }
 
         session.close();
